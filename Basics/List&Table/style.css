@@ -1,0 +1,61 @@
+body{
+    background-color: black;
+    color: white;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: red;
+    text-align: center;
+    text-transform: capitalize;
+}
+h1:hover{
+    background-color: white;
+    color: black;
+}
+
+h2{
+    text-align: left;
+    background-color: white;
+    color: red;
+}
+h2:hover{
+    text-transform: uppercase;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+h3{
+    background-color: blue;
+    color: pink;
+}
+
+h3:hover{
+    text-align: center;
+}
+ul:hover{
+    background-color: purple;
+}
+ol:hover{
+    background-color: darkgreen;
+}
+li:hover{
+    background-color: white;
+    color: black;
+}
+
+table{
+    background-color: lavender;
+    width: 40%;
+}
+thead{
+    background-color: purple;
+    color: red;
+}
+thead:hover{
+    background-color: white;
+    
+}
+tbody{
+    color: blue;
+}
