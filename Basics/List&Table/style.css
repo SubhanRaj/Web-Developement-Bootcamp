@@ -59,3 +59,6 @@ thead:hover{
 tbody{
     color: blue;
 }
+td{
+    text-align: center;
+}

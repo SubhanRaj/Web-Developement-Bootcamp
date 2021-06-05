@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="/Basics/Forms/style.css">
+</head>
+<body>
+    <h1>
+        Forms in HTML
+    </h1>
+        <h2>Student Registration form</h2>
+    <div id="form">
+        <form method="POST" action="/Basics/Forms/data.php">
+            <div class="name">
+                Enter your Name <input type="text" name="StudentName" placeholder="Enter your name">
+            </div>
+            <br>
+            <div class="course">
+                Select your Course input:
+                <select class="dropdown" name="courses">
+                    <option value="">--Please choose an option--</option>
+                    <option value="B.Sc.">B. Sc.</option>
+                    <option value="B.A.">B.A.</option>
+                    <option value="BCA">BCA</option>
+                    <option value="B. Tech.">B. Tech.</option>
+                    <option value="B. Ed.">B. Ed.</option>
+                </select>
+            </div>
+            <br>
+            <div class="dob">
+                Enter your Date of Birth in DD:MM:YYYY format : <input type="date" name="dob" max="2015-12-31"
+                    placeholder="Your Date of Birth">
+            </div>
+            <br>
+            <div class="mobile">
+                Enter your Mobile No <input type="tel" name="mobileNo" maxlength="14" minlength="10"
+                    placeholder="Your Mobile Number">
+            </div>
+            <br>
+            <div class="email">
+                Enter your Email: <input type="email" name="email" placeholder="Your Email">
+            </div>
+            <br>
+            <div class="gender">
+                Choose Your Gender: <input type="radio" name="gender"> Male <input type="radio" name="gender"> FeMale
+            </div>
+            <br>
+            <div class="submit">
+                <input type="submit" value="Submit">
+            </div>
+            <br>
+            <div class="reset">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+        
+    </div>
+    
+</body>
+</html>

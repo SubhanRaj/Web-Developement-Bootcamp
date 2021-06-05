@@ -1,0 +1,46 @@
+/* Styling for forms.html */
+body{
+    background-color: black;
+    color: white;
+    
+}
+
+h1{
+    text-align: center;
+    text-transform: capitalize;
+    background-color: black;
+    color: red;
+    border: 2px solid yellow;
+    border-radius: 25px;
+}
+h1:hover{
+    background-color: red;
+    color: black;
+}
+
+form{
+    border: 2px solid gold;
+    border-radius: 45px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: transparent;
+    
+}
+
+.dropdown:hover{
+    background-color: aqua;
+    color: red;
+    font-size: 15px;
+}
+
+.submit{
+    
+    
+}
+
+.reset{
+    display: inline;
+}
