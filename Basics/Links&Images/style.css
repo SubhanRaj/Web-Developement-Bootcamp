@@ -1,0 +1,17 @@
+body{
+    background-color: lavender;
+}
+
+h1{
+    text-align: center;
+    font-style: italic;
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+    
+}
+a:hover{
+    background-color: black;
+    color: red;
+}
