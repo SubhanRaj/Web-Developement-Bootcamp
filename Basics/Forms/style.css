@@ -23,7 +23,7 @@ form{
     border-radius: 45px;
     margin-left: 150px;
     margin-right: 150px;
-    padding-left: 50px;
+    padding-left: 300px;
     padding-top: 10px;
     padding-bottom: 10px;
     background: transparent;
@@ -36,11 +36,3 @@ form{
     font-size: 15px;
 }
 
-.submit{
-    
-    
-}
-
-.reset{
-    display: inline;
-}
