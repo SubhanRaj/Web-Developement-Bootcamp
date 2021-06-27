@@ -1,0 +1,60 @@
+.container{
+    border: 2px solid black;
+    background-color: khaki;
+    height: 3500px;
+}
+.box{
+    display: inline-block;
+    border: 2px solid red;
+    height: 150px;
+    width: 150px;
+    margin: 2px;
+    
+    
+}
+p{
+text-align: center;
+padding: 2px;
+margin: 50px;
+}
+
+/* We have 5 Box Properties */
+/* 
+1. Statics (default)
+2. relative
+3. absolute
+4. fixed
+5. sticky
+ */
+/* Let use them One By One */
+
+#box1{
+    position: static;
+}
+#box2{
+    /* Realtive: relative to its normal postion and will leave a gap at its normal position */
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+#box3{
+    /* Absolute: relative to the position of the first parent */
+    position: absolute;
+}
+
+#box4{
+    /* Fixed: Positon relative to the browser windows */
+    position: fixed; 
+    right: 40px;
+    bottom: 10px;
+    font-size: 20px;
+    text-align: justify;
+    padding-bottom: 10px;
+    
+}
+
+#box5{
+    position: sticky;
+    top: 10px;
+}
