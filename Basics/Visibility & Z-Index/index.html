@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility & Z- Index</title>
+    <style>
+        .box {
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+
+        }
+
+        /* z- index only work when positon is relative or fixed or sticky or absolute */
+        #box1 {
+            position: relative;
+            top: 50px;
+            background-color: red;
+        }
+
+        #box2 {
+            position: relative;
+            top: 14px;
+            background-color: green;
+
+            /* visibility: hidden; */
+            /* It makes the object invisible, but it occupies its position */
+            /* display: none; */
+            /* It completly hides the object */
+        }
+
+        #box3 {
+            background-color: blue;
+        }
+
+        #box4 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+
+</html>
