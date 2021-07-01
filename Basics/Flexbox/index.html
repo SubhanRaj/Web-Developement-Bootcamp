@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            height: auto;
+            width: 100%;
+            border: 2px solid black;
+            /* Initilaize the container as flex box */
+            display: flex;
+            /* Flex properties for flex container */
+            flex-direction: row;
+            /* Sets the direction of the flex box, row is default */
+            /* flex-direction: column;
+            /* Sets the direction in column */
+            /* flex-direction: row-reverse;  */
+            /* Reverse the direction of the row */
+            /* flex-direction: column-reverse;
+            Reverse the direction of the colum */
+
+            flex-wrap: wrap;
+            /* Sets the wrapping of the flex box, default value is 'nowrap' */
+            /* We can set flex direction and flex wrap together as follow */
+            /* flex-flow: row-reverse wrap; */
+            /* Justify's the alignment of the content horizontally */
+            justify-content: center;
+            justify-content: space-around;
+            /* alignt the items vertically */
+            align-items: center;
+        }
+
+        .item {
+            width: 150px;
+            height: 150px;
+            background-color: tomato;
+            border: 2px solid olive;
+            margin: 10px;
+            padding: 3px;
+
+        }
+
+        /* Flex-Order: Higher the order, later it willl be shown in container */
+        #item-1 {
+            order: 1;
+            flex-grow: 2;
+        }
+
+        #item-2 {
+            order: 2;
+            flex-grow: 4 ;
+        }
+
+        #item-3 {
+            order: 3;
+        }
+
+        #item-4 {
+            order: 4;
+        }
+
+        #item-5 {
+            order: 5;
+        }
+
+        #item-6 {
+            order: 6;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is flexbox</h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <div class="item" id="item-4">Forth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+
+    </div>
+</body>
+
+</html>
