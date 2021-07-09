@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .box {
+            background-color: red;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-size: 72px;
+            display: none;
+            
+        }
+
+        @media (max-width: 500px) {
+            #box-1 {
+                display: block;
+                background-color: blue;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width: 1000px) {
+            #box-2 {
+                display: block;
+                background-color: cyan;
+            }
+        }
+
+        @media (min-width: 1000px) and (max-width: 2000px) {
+            #box-3 {
+                display: block;
+                background-color: gray;
+            }
+        }
+
+        @media (min-width: 2000px) {
+            #box-4 {
+                background-color: red;
+                display: block;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box-1">How it will look on an iPhone</div>
+    <div class="box" id="box-2">This is how it willl look on a iPad</div>
+    <div class="box" id="box-3">This is how it will look on desktop</div>
+    <div class="box" id="box-4">This is how it will look on a widescreen</div>
+</body>
+
+</html>
