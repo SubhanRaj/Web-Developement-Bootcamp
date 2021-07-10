@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Press+Start+2P&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+header::before {
+    background: url('https://source.unsplash.com/collection/4325322') no-repeat center center /cover;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+
+}
+
+.navigation {
+    font-size: 20px;
+    display: flex;
+    font-family: 'Bree Serif', serif;
+    justify-content: center;
+
+}
+
+li {
+    list-style: none;
+    padding: 20px 30px;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+    text-decoration: underline;
+    color: tomato;
+
+}
+
+section {
+    height: 500px;
+    /* border: 2px solid red; */
+    display: flex;
+    margin: 3px 230px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+}
+
+p {
+    text-align: center;
+}
+
+/* section::before{
+            content: "This is a content inserted using before pseudo selector";
+        } */
