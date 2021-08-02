@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Strings in JavaScript -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | Strings & String Methods</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 100%;
+            color: #333;
+        }
+
+        .container {
+            display: block;
+            width: 75%;
+            margin: 10% auto;
+            border: 2px solid red;
+            padding: 20px;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        p {
+
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Lorem ipsum dolor sit</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit temporibus ex alias quas error ipsa saepe.
+            Eaque amet repellat temporibus delectus, tempore voluptatem illum voluptatum dignissimos libero doloremque
+            consequatur reiciendis ex voluptate quasi porro itaque!</p>
+    </div>
+</body>
+<script>
+    var string1 =
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit temporibus ex alias quas error ipsa saepe.\n"
+    console.log(string1);
+    var string2 = 'hello world';
+    console.log(string2);
+    // If we need to use "" in string, we use '' to avoid the error
+    var string3 = 'Samual L Jackson once said "You MF Bitch" ';
+    console.log(string3);
+    // If we need to use '' in string, we use "" to avoid the error
+    var string4 = "He's One, I Love Most!";
+    console.log(string4);
+
+    var name = '30 Days of Code';
+    var message = "I'm doing the challange";
+    var prepositon = 'of';
+    console.log(message + ' ' + prepositon + ' ' + name);
+    // The '+' operator concatenates the strings.
+    // The '' adds empty space between the strings.
+    // console.log prints the string to the console.
+    var temp = `Subhan's phone says:"${message} ${name} to become good at coding" `;
+    console.log(temp);
+    // The `` can be used if we want to use the string as a string without using the + operator & it can also allow us to use both "" and '' in the string.
+    // The ${} is used to add the string to the string.
+
+    
+
+
+</script>
+
+</html>
