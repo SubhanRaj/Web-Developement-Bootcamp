@@ -24,13 +24,17 @@
             padding: 20px;
         }
 
-        h3 {
+        h1 {
             text-align: center;
             font-size: 25px;
         }
 
-        p {
+        h3 {
+            text-align: center;
+            font-size: 15px;
+        }
 
+        p {
             text-align: justify;
         }
     </style>
@@ -38,7 +42,12 @@
 
 <body>
     <div class="container">
-        <h3>Lorem ipsum dolor sit</h3>
+        <h1>Lorem ipsum dolor sit</h1>
+        <div id="content">
+
+            <!-- h3 will be inserted dynamically by JS -->
+
+        </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit temporibus ex alias quas error ipsa saepe.
             Eaque amet repellat temporibus delectus, tempore voluptatem illum voluptatum dignissimos libero doloremque
             consequatur reiciendis ex voluptate quasi porro itaque!</p>
@@ -68,10 +77,15 @@
     console.log(temp);
     // The `` can be used if we want to use the string as a string without using the + operator & it can also allow us to use both "" and '' in the string.
     // The ${} is used to add the string to the string.
+    var y = new String("This is a string");
+    console.log(y);
+    // This prints the string to the console with the new String function.
+    // new String is used to create a new string.
+    // The string is created with the string constructor.
 
+    document.getElementById('content').innerHTML = '<h3> This is a h3 heading </h3>'
+    // This is used to insert a h3 tag into the content div by using the id of the content div.
     
-
-
 </script>
 
 </html>
