@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigating the DOM</title>
+</head>
+<style>
+    .h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        color: white;
+        background: black;
+    }
+
+    #navbar {
+        margin-top: 0.5%;
+        border: 2px solid white;
+        border-radius: 15px;
+        background-color: black;
+        height: 5rem;
+    }
+
+
+    #ul {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 24px auto;
+
+    }
+
+    #ul li {
+        list-style: none;
+        color: wheat;
+        font-size: 2rem;
+    }
+</style>
+
+<body>
+    <div class="h1">
+        Navigating The DOM
+    </div>
+    <div id="navbar">
+        <div id="ul">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Services</li>
+            <li>Click Me</li>
+            <li>Contact Us</li>
+        </div>
+
+    </div>
+
+</body>
+<script>
+    let navbar = document.getElementById('navbar');
+    console.log(navbar);
+    let ul = document.getElementById('ul');
+    console.log(ul);
+
+    let menu_change = confirm("Do you want to change menu?")
+    if (menu_change) {
+        ul.innerHTML;
+        ul.innerHTML = "<li>Dynamic Element</li>";
+    } else {
+        ul;
+    }
+</script>
+
+</html>
