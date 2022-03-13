@@ -1,1 +1,0 @@
-e are using global variable a, not he local variable a
