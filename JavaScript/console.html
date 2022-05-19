@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Console</title>
+</head>
+
+<body>
+    <button class="btn" value="showAlert" onclick="showAlert()">
+        Click to See magic
+    </button>
+    <script>
+        function showAlert() {
+            alert("Alert in JavaScript");
+        }
+        console.log("This is a console log");
+        console.warn("This is a console warning");
+        console.error("This is a console error");
+        document.write("This is a document write");
+        // Clear console after 10 seconds
+        setTimeout(function() {
+            console.clear();
+        }, 10000);
+        // console.clear();
+    </script>
+</body>
+
+</html>
