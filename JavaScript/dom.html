@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            border: 2px solid red;
+            margin: 3px 0;
+            background-color: cyan;
+            padding: 9px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Javascript DOM Manipulation</h1>
+    <div class="container" id="firstContainer">
+        <button id="click">Click Me</button>
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, dolore?</p>
+    </div>
+    <script>
+        let elem = document.getElementById('click');
+        console.log(elem);
+
+        let container = document.getElementsByClassName('container');
+        console.log(container);
+        document.getElementById('click').addEventListener('click', function () {
+            container[0].style.backgroundColor = 'red';
+        });
+        // On click, change the title of the page
+        document.getElementById('click').addEventListener('click', function () {
+            document.title = 'Changed';
+        });
+
+        window.onload() = function (){
+            console.log("Page loaded");
+        }
+    </script>
+</body>
+
+</html>
